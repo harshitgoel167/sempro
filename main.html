@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        border:2px solid maroon;
+        background-color: burlywood;
+    }
+    .qwe{
+        border:2px solid red;
+        display:flex;
+        justify-content: space-between;
+
+
+    }
+    .qwe::before{
+        content:"";
+        position: absolute;
+        border:2px solid brown;
+        background:url("pics/lady.jpg");
+        background-repeat : no-repeat;
+        background-position : center;
+        background-size: 100% 100%;
+        width:99%;
+        height : 681px;
+        top:8px;
+        left:8px;
+        z-index:-1;
+
+    }
+
+    .logo{
+        border:2px solid pink;
+    }
+
+    .logo img{
+        border: 2px solid orange;
+        width: 107px;
+    height: 100px;
+        
+    }
+
+    .ul{
+        border:2px solid green;
+        list-style:none;
+        display:flex;
+        padding: 2px;
+        position:absolute;
+        left:371px;
+        top:10px;
+    }
+
+    ul::before{
+        content:'';
+        position: absolute;
+        border:2px solid brown;
+        background-color:black;
+        width:100%;
+        height:76px;
+        top:-1px;
+        left:-1px;
+        z-index:-1;
+    }
+
+
+    .ul a{
+        text-decoration: none;
+        color:red;
+    }
+
+    .donate{
+        border:2px solid blue;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        background-color: cornflowerblue;
+        height: 78px;
+    position: absolute;
+    left: 1313px;
+    top: 25px;
+    }
+
+    .donate a{
+        color:yellow;
+        text-decoration: none;
+        text-decoration: none;
+    font-size: 39px;
+    padding: 17px;
+    }
+    .li{
+        border:2px solid grey;
+        font-size: 23px;
+    margin: 18px;
+    font-family: cursive;
+    }
+
+    .maindiv{
+        color:black;
+        border:2px solid yellow;
+        height:565px;
+        font-size:23px;
+        font-style:bold;    
+
+    }
+    .po{
+        color:brown;
+        border:2px solid red;
+        display: block;
+    width: 273px;
+    font-size: 29px;
+    border-radius: 21px;
+    position: absolute;
+    left: 632px;
+        
+    }
+    .har{
+        border:2px solid green;
+        height:1678px;
+    }
+
+    .first{
+        border:2px solid greenyellow;
+        height:234px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .pone{
+        border:2px solid maroon;
+        height:100px;
+        font-size:2em;
+        font-weight:bold;
+    }
+
+    .sec{
+        border:2px solid mediumaquamarine;
+        height:277px;
+        
+    }
+    
+    .insta{
+        border:2px solid orangered;
+    
+    }
+
+    .insta img{
+        width: 235px;
+    height: 160px;
+    }
+    .twitter{
+        border:2px solid peru;
+    }
+
+    .twitter img{
+        width: 235px;
+    height: 160px;
+    }
+    .face{
+        border:2px solid red;
+    }
+
+    .face img{
+        width: 235px;
+    height: 160px;
+    }
+    .wrap{
+        display:flex;
+        justify-content: space-evenly;
+        border:2px solid green;
+        margin-left: 63px;
+    margin-right: 63px;
+    }
+
+    .joinus{
+        border:2px solid blue;
+        border: 2px solid blue;
+    font-size: 39px;
+    font-style: italic;
+    font-family: cursive;
+    color: sienna;
+    margin-top:15px
+    }
+
+    .video{
+        border:2px solid brown;
+        height: 400px;
+    }
+
+
+    .what{
+        border:2px solid greenyellow;
+        height:700px;
+        background-color: #e7e7e9;
+    }
+    .watp{
+        border:2px solid blue;
+        font-size: 18px;
+        
+    }
+    .parat{
+        border:2px solid orange;
+        font-size: 19px;
+    word-spacing: 1px;
+    padding: 7px;
+    padding-right: 49px;
+    padding-left: 49px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-family: 'Libre Baskerville', serif;
+        color: #303030;
+        background-color: #e7e7e9;
+        margin-bottom: 47px;
+    }
+    .watpara{
+        border:2px solid red;
+        font-size:29px;
+        font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+        margin-top: -11px;
+        font-weight: 100;
+        color: #303030;
+        
+    }
+
+    .whatimg{
+        border:2px solid blueviolet;
+        height:832px;
+    }
+    .whatimg img{
+        border:2px solid violet;
+        width: 1470px;
+    }
+
+    .learn a{
+        border:2px solid red;
+        font-size: 23px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    }
+
+    /*copied   */
+    p{
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 960px;
+}
+
+h5 {
+    font-size: 0.9375em;
+    line-height: 30px;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #303030;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 2.125em;
+    line-height: 40px;
+    font-weight: 100;
+    color: #303030;
+    margin-bottom: 60px;
+    padding-top: 0;
+    text-align: center;
+}
+
+span3, .container-full .box-fourth, .container .box-fourth, .footer-widgets.fourths .footer-widget, #main .sidebar, #gform_9 li.input-first-name, .one-fourth {
+    width: 25%;
+    float: left;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    color: inherit;
+    line-height: 1.4;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:before, #stats .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: -16px;
+    margin: 0;
+    border-right: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a {
+    color: #f16521;
+}
+#stats .ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    color: #c5c5c5;
+}
+ul li a {
+    line-height: 1;
+}
+a {
+    color: #f16521;
+}
+a {
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+p {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+p {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:before, #stats .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active:after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: -16px;
+    margin: 0;
+    border-right: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-nav li {
+    position: relative;
+    width: 100%;
+    padding: 20px 25px;
+}
+ul li {
+    color: inherit;
+    line-height: 1.4;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    color: #c5c5c5;
+}
+ul li a {
+    line-height: 1;
+}
+a {
+    color: #f16521;
+}
+a {
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-panel {
+    padding-top: 20px;
+    text-align: center;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+.span3, .container-full .box-fourth, .container .box-fourth, .footer-widgets.fourths .footer-widget, #main .sidebar, #gform_9 li.input-first-name, .one-fourth {
+    width: 25%;
+    float: left;
+}
+
+#stats .ui-tabs-vertical .ui-tabs-panel {
+    padding-top: 20px;
+    text-align: center;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+p.stat {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #f3af0f;
+}
+
+p.serif {
+    font-family: Chaparral Pro, Georgia, serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #666;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+#stats a.link {
+    margin-top: 0;
+    display: block;
+    text-align: center;
+}
+a.link {
+    display: inline-block;
+    color: #f16521;
+}
+a {
+    color: #f16521;
+}
+a {
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+a.link .fa.fa-angle-right {
+    margin-left: 10px;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-angle-right:before {
+    content: "";
+}
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+
+</style>
+<body>
+    <div class="qwe">
+        <div class="logo">
+            <img src="pics/images.png">
+
+        </div>
+
+    <ul class="ul">
+        <a href=""><li class="li">Home</li></a>
+        <a href=""><li class="li">Who we are</li></a>
+        <a href=""><li class="li">What we do</li></a>
+        <a href=""><li class="li">Ways to get involved</li></a>
+        <a href=""><li class="li">What's Happening</li></a>
+    </ul>
+
+    <div class="donate">
+        <a href="">DONATE</a>
+    </div>
+    </div>
+    <div class="maindiv">
+        <a href=""><center><h1>HELP</h1></center></a>
+        <BR>
+        <P ><center class="po">Find out the help</center></P>
+    </div>
+    <section class="har">
+        <div class="first">
+            <span class="pone">To celebrate the HELP album's 25th anniversary we're <br>relaunching the record on limited edition vinyl and making it <br>available on digital streaming platforms for the first time ever!</span>
+        </div>
+
+        <div class="sec">
+            <center><h1 class="joinus">JOIN US ON</h1></center>
+            <div class="wrap">
+            <div class="insta">
+               <a href="https://instagram.com" target="blank"> <img src="pics/ins.jpg"> </a>
+            </div>
+            <div class="twitter">
+                <a href="http://twitter.com" target="blank"><img src="pics/tter.jpg"></a>
+            </div>
+            <div class="face">
+                <a href="http://linkedin.com" target="blank"><img src="pics/li.jpg"></a>
+            </div>
+            </div>
+        </div>
+        <div class="what">
+            <center><p class="watp">WHAT WE DO</p></center>
+            <center><p class="watpara">We build a better future for America’s youth by connecting <br>needy ones to the real heroes in our society.they want to share to help others .</p></center>
+            <div class="whatimg">
+                <img src="pics/dr.jpg">
+            </div>
+            
+            <p class="parat">Our mission is to break the cycle of poverty, illiteracy and low expectations through service and education. We empower U.S. youth<br> to transform their neighborhoods through intensive community service and to change the world by building schools in some of the<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;economically poorest countries on the planet.
+            <div class="learn">
+               <center><a href="">LEARN MORE</a></center>
+            </div>
+            </p>
+            
+        </div>
+    </section>
+
+    <section id="stats"><!--STATS TABS--><p></p>
+        <div class="container">
+        <h5>It’s Working</h5>
+        <h2>buildOn students are creating lasting change for themselves,<br>
+        their communities and our world.</h2>
+        <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-vertical ui-helper-clearfix">
+        <div class="span3">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-tabs-active ui-state-active ui-corner-left" role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true"><a href="#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"><i class="fa fa-map-marker"></i><br>
+        </a><p></p>
+        <div class="text">U.S. Impact</div>
+        <p>&nbsp;</p></li>
+        <li class="ui-state-default ui-corner-left" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false"><a href="#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2"><i class="fa fa-globe"></i><br>
+        </a><p></p>
+        <div class="text">Global Impact</div>
+        <p>&nbsp;</p></li>
+        </ul>
+        </div>
+        <div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div class="span3">
+        <p class="stat">14,491</p>
+        <p class="serif">Students engaged in buildOn programs</p>
+        </div>
+        <div class="span3">
+        <p class="stat">98%</p>
+        <p class="serif">Of buildOn students graduate high school</p>
+        </div>
+        <div class="span3">
+        <p class="stat">2.3 million</p>
+        <p class="serif">Volunteer service hours contributed by students</p>
+        </div>
+        </div>
+        <div id="tabs-2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div class="span3">
+        <p class="stat">1,719</p>
+        <p class="serif">Schools built in developing countries</p>
+        </div>
+        <div class="span3">
+        <p class="stat">231,821</p>
+        <p class="serif">Children and adults attend buildOn schools every day</p>
+        </div>
+        <div class="span3">
+        <p class="stat">3.1 million</p>
+        <p class="serif">Volunteer work days contributed by community members</p>
+        </div>
+        </div>
+        </div>
+        <p><a class="link" href="/category/stories/">Hear stories of students we’ve empowered <i class="fa fa-angle-right"></i></a></p>
+        </div>
+        </section>
+    
+    
+        
+    
+</body>
+</html>
